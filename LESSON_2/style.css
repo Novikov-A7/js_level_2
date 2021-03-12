@@ -1,0 +1,41 @@
+header {
+    height: 60px;
+    max-width: 1250px;
+    background: gray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+    button:hover {
+        background: rgb(73, 196, 218);
+        color: rgb(16, 16, 238);
+        font-weight: bold;
+    }
+    .goods-item:hover{
+        background: rgba(51, 235, 19, 0.644);
+        border: 2px solid black
+    }
+    .cart-button{
+        box-sizing: border-box;
+        height: 30px;
+        width: 100px;
+        margin: 40px;
+        border-radius: 10px;
+    
+    }
+    .container{
+        max-width: 1250px;
+    }
+    .goods-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .goods-item{
+        margin-top: 20px;
+        border: 1px solid black ;
+        height: 200px;
+        width: 200px;
+        text-align: center
+    } 
