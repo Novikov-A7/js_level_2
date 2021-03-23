@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>eShop</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="goods-list"></div>
+    </main>
+    <div id="app">
+        <header>
+            <input id="search" v-model="search" v-on:input="searchHandler">
+            <button class="cart-button" type="button">Корзина</button>
+        </header>
+
+        <main>
+
+            <div class="goods-list">
+                <h1 v-for="filtredGoods.length < 1">"Все пропало"</h1>
+                <div class="goods-item" v-for="good in filtredGoods">
+                    <h3>{{ good.title }}</h3>
+                    <p>{{ good.price }}</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
