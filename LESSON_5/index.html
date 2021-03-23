@@ -19,7 +19,7 @@
         <main>
 
             <div class="goods-list">
-                <h1 v-for="filtredGoods.length < 1">"Все пропало"</h1>
+                <h1 v-if="filtredGoods.length = 0">"Шеф, все пропало"</h1>
                 <div class="goods-item" v-for="good in filtredGoods">
                     <h3>{{ good.title }}</h3>
                     <p>{{ good.price }}</p>

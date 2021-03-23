@@ -61,4 +61,4 @@ const vue = new Vue({
 })
 
 // задание 3* заглушка для пустого списка товаров 
-//добавил заголовок, в index.html <h1 v-for="filtredGoods.length < 1">"Все пропало"</h1>
+//добавил заголовок, в index.html <h1 v-if="filtredGoods.length = 0">"Шеф, все пропало"</h1>
